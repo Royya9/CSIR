@@ -12,6 +12,9 @@ As required, I have scraped all the HIV related articles from Times of India Web
 
 For the first part, as there is no labeled data for training a sentiment analysis model, I have used pre-trained Microsoft Azure's Cognitive Analytics API (free subscription) for rating each article. After obtaining sentiment scores on 0-1 scale for all articles, I've plotted the sentiment values verus number of articles on a density plot. Also analysed the articles with highest and lowest sentiment values.
 
+The pages.csv file contains 33 rows with search pages from Times of India Website obtained from scraping.
+The Analysis.csv file contains 600 rows with links to each article and the article's corresponding sentiment score in the third column.
+
 For the second part, I have used nltk and gensim.word2vec libraries for word tokenizing and vectorization respectively. I have trained a word2vec model with the following params:
 
 number of features = 500
